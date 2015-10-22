@@ -53,9 +53,14 @@ static const NSTimeInterval kAnimationDuration = 0.35f;
     [self setTitle:self.titleForNormalState forState:UIControlStateNormal];
 }
 
+- (void) didMoveToWindow {
+    [super didMoveToWindow];
+    
+    [self setTitle:self.titleForNormalState forState:UIControlStateNormal];
+}
+
 #warning  Почитай как правильно делать сабкласс кнопки и из каких методов вызывать какие настройки
 
-#warning Разбить на подметоды
 - (void) defaultParametersForButton {
     
     self.isPressed = NO;
@@ -148,7 +153,7 @@ static const NSTimeInterval kAnimationDuration = 0.35f;
 
 - (void) configureButtonForPressedState {
     
-    NSLog(@"%@", self.titleForPressedState);
+    //NSLog(@"%@", self.titleForPressedState);
     [self setTitle:self.titleForPressedState forState:UIControlStateNormal];
     [self setImage:self.imageForPressedState forState:UIControlStateNormal];
     [self setTitleColor:self.titleColorForPressedState forState:UIControlStateNormal];

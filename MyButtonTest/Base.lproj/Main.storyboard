@@ -28,6 +28,7 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForPressedState">
                                         <color key="value" red="0.48323796990000001" green="0.91414141410000005" blue="0.70281917760000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleForNormalState" value="test"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>

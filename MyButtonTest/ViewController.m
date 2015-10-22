@@ -22,6 +22,7 @@
     KGResizebleButton* btn = [KGResizebleButton buttonWithType: UIButtonTypeCustom];
     btn.frame = CGRectMake(200, 100, 100, 30);
     btn.titleForNormalState = @"asd";
+    NSLog(@"1st");
     [self.view addSubview:btn];
 }
 
