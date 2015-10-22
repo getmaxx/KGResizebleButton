@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qc-RJ-661" customClass="KGResizebleButton">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qc-RJ-661" customClass="KGResizebleButton">
                                 <rect key="frame" x="20" y="20" width="54" height="34"/>
                                 <animations/>
                                 <state key="normal" title="Button">
@@ -28,7 +28,14 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForPressedState">
                                         <color key="value" red="0.48323796990000001" green="0.91414141410000005" blue="0.70281917760000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="titleForNormalState" value="test"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleForNormalState" value="zomg"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColorForNormalState">
+                                        <color key="value" red="0.89247996770000004" green="0.42494054120000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColorForPressedState">
+                                        <color key="value" red="0.16548227579999999" green="0.15982935700000001" blue="0.48989898990000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleForPressedState" value="ZOMG"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>

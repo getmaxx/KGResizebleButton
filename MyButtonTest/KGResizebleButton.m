@@ -56,7 +56,8 @@ static const NSTimeInterval kAnimationDuration = 0.35f;
 - (void) didMoveToWindow {
     [super didMoveToWindow];
     
-    [self setTitle:self.titleForNormalState forState:UIControlStateNormal];
+    //[self setTitle:self.titleForNormalState forState:UIControlStateNormal];
+    [self finalSetupForButton];
 }
 
 #warning  Почитай как правильно делать сабкласс кнопки и из каких методов вызывать какие настройки
@@ -67,6 +68,19 @@ static const NSTimeInterval kAnimationDuration = 0.35f;
     [self configureImages];
     [self configureTitles];
     [self configureButtonApperiance];
+}
+
+- (void) finalSetupForButton {
+    
+    [self setImage:self.imageForHighlitedState forState:UIControlStateHighlighted];
+    [self setImage:self.imageForNormalState forState:UIControlStateNormal];
+
+    [self setBackgroundColor: self.backgroundColorForNormalState];
+    
+    [self setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
+    [self setTitle:self.titleForNormalState forState:UIControlStateNormal];
+    [self setTitleColor:self.titleColorForNormalState forState:UIControlStateNormal];
+    
 }
 
 - (void) configureImages {

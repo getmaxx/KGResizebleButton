@@ -23,6 +23,7 @@
     btn.frame = CGRectMake(200, 100, 100, 30);
     btn.titleForNormalState = @"asd";
     NSLog(@"1st");
+    btn.backgroundColorForNormalState = [UIColor redColor];
     [self.view addSubview:btn];
 }
 
