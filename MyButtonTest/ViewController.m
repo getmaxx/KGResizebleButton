@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "KGResizebleButton.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    KGResizebleButton* btn = [KGResizebleButton buttonWithType: UIButtonTypeCustom];
+    btn.frame = CGRectMake(200, 100, 100, 30);
+    btn.titleForNormalState = @"asd";
+    [self.view addSubview:btn];
 }
 
 - (void)didReceiveMemoryWarning {

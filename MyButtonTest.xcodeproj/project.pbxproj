@@ -13,6 +13,7 @@
 		290323C41BD957EA0086F198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290323C21BD957EA0086F198 /* Main.storyboard */; };
 		290323C61BD957EA0086F198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290323C51BD957EA0086F198 /* Assets.xcassets */; };
 		290323C91BD957EA0086F198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290323C71BD957EA0086F198 /* LaunchScreen.storyboard */; };
+		290323D21BD958020086F198 /* KGResizebleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 290323D11BD958020086F198 /* KGResizebleButton.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		290323C51BD957EA0086F198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		290323C81BD957EA0086F198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		290323CA1BD957EA0086F198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		290323D01BD958020086F198 /* KGResizebleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGResizebleButton.h; sourceTree = "<group>"; };
+		290323D11BD958020086F198 /* KGResizebleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGResizebleButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				290323BD1BD957EA0086F198 /* AppDelegate.m */,
 				290323BF1BD957EA0086F198 /* ViewController.h */,
 				290323C01BD957EA0086F198 /* ViewController.m */,
+				290323D01BD958020086F198 /* KGResizebleButton.h */,
+				290323D11BD958020086F198 /* KGResizebleButton.m */,
 				290323C21BD957EA0086F198 /* Main.storyboard */,
 				290323C51BD957EA0086F198 /* Assets.xcassets */,
 				290323C71BD957EA0086F198 /* LaunchScreen.storyboard */,
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				290323C11BD957EA0086F198 /* ViewController.m in Sources */,
+				290323D21BD958020086F198 /* KGResizebleButton.m in Sources */,
 				290323BE1BD957EA0086F198 /* AppDelegate.m in Sources */,
 				290323BB1BD957EA0086F198 /* main.m in Sources */,
 			);
@@ -263,6 +269,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyButtonTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iv.MyButtonTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +281,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyButtonTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iv.MyButtonTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
