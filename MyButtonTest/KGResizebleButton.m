@@ -51,12 +51,24 @@ static const NSTimeInterval kAnimationDuration = 0.35f;
     
      //[self defaultParametersForButton];
     [self setTitle:self.titleForNormalState forState:UIControlStateNormal];
+    //[self configureButtonApperiance];
+    
+    self.contentEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
+    self.imageEdgeInsets = UIEdgeInsetsMake(0, -2.5f, 0, 0);
+    self.layer.borderColor = self.borderColorForNormalState.CGColor;
+    self.adjustsImageWhenHighlighted = NO;
+    self.cornerRadius = 2;
+    self.borderWidth = 1;
+    self.layer.borderWidth = self.borderWidth;
+    self.layer.cornerRadius = self.cornerRadius;
+
 }
 
 - (void) didMoveToWindow {
     [super didMoveToWindow];
     
     //[self setTitle:self.titleForNormalState forState:UIControlStateNormal];
+    //[self configureButtonApperiance];
     [self finalSetupForButton];
 }
 
@@ -112,8 +124,13 @@ static const NSTimeInterval kAnimationDuration = 0.35f;
     self.borderColorForNormalState = [UIColor colorWithWhite:0.2f alpha:0.5f];
     [self setBackgroundColor: self.backgroundColorForNormalState];
     
-    self.contentEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
-    self.imageEdgeInsets = UIEdgeInsetsMake(0, -2.5f, 0, 0);
+    if (UIEdgeInsetsEqualToEdgeInsets(self.contentEdgeInsets, UIEdgeInsetsZero)) {
+        self.contentEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
+    }
+    if (UIEdgeInsetsEqualToEdgeInsets(self.imageEdgeInsets, UIEdgeInsetsZero)) {
+        self.imageEdgeInsets = UIEdgeInsetsMake(0, -2.5f, 0, 0);
+    }
+    
     self.layer.borderColor = self.borderColorForNormalState.CGColor;
     self.adjustsImageWhenHighlighted = NO;
     self.cornerRadius = 2;
